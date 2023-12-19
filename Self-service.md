@@ -56,9 +56,7 @@
 *5,/api/v1/entitytype/form*
 
 ## **<ins>Login Page</ins>**
-
    ![N|Solid](assets\LoginPage.png)
-
    In Self-service we have two types of login [`Active-Directory`](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn283324(v=ws.11)) and [`Authgateway-Login`](https://portal.mawarid.com.sa/System/#/SelfService/authgateway)
 > Note:
    - For Active-directory login we need credentials that are registed in azure, For configuration purpose we need (ClientId, Authority,  and RedirectURL)
