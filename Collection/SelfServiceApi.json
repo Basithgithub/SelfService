@@ -1,0 +1,1441 @@
+{
+	"info": {
+		"_postman_id": "3481a8ae-a216-422d-9f96-cc014ea195ff",
+		"name": "Self-Service Api List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30240696"
+	},
+	"item": [
+		{
+			"name": "SelfService Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appcode\":\"App0000015\",\r\n    \"companycode\":\"Mawarid\",\r\n    \"environmentcode\":\"Live\",\r\n    \"password\":\"123456\",\r\n    \"username\":\"a.hyder\",\r\n    \"usertype\":\"System\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://portal.mawarid.com.sa/SystemApi//api/v1/org/login"
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeDetaislByEmployeeName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/getEmployeeDetailsByEmployeeIdOrName?_employeeIdOrName=1053217&_Company=MWD&user-id=a.hyder",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"getEmployeeDetailsByEmployeeIdOrName"
+					],
+					"query": [
+						{
+							"key": "_employeeIdOrName",
+							"value": "1053217"
+						},
+						{
+							"key": "_Company",
+							"value": "MWD"
+						},
+						{
+							"key": "user-id",
+							"value": "a.hyder"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Leave - Event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dm.mawarid.com.sa:9443/BCPTest/api/v1/erp/insertLeave?user-id=a.hyder",
+					"protocol": "https",
+					"host": [
+						"dm",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"port": "9443",
+					"path": [
+						"BCPTest",
+						"api",
+						"v1",
+						"erp",
+						"insertLeave"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "a.hyder"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Selfservice request from ERP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/SystemApi/api/v1/recruitment/CreateSelfServiceRequestERP?recId=recId&requestType=EmployeeLeaveRequest&formRecid=909&skipStageMovement=true&attachmentformRecid=11575",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"SystemApi",
+						"api",
+						"v1",
+						"recruitment",
+						"CreateSelfServiceRequestERP"
+					],
+					"query": [
+						{
+							"key": "recId",
+							"value": "recId"
+						},
+						{
+							"key": "requestType",
+							"value": "EmployeeLeaveRequest"
+						},
+						{
+							"key": "formRecid",
+							"value": "909"
+						},
+						{
+							"key": "skipStageMovement",
+							"value": "true"
+						},
+						{
+							"key": "attachmentformRecid",
+							"value": "11575"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBalancesOfVisaVacationAndTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/getBalancesOfVisaVacationAndTicket?EmpNum=1053217&VacationType=sick&StartDate=12/01/2023&VacationDays=1&user-id=true",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"getBalancesOfVisaVacationAndTicket"
+					],
+					"query": [
+						{
+							"key": "EmpNum",
+							"value": "1053217"
+						},
+						{
+							"key": "VacationType",
+							"value": "sick"
+						},
+						{
+							"key": "StartDate",
+							"value": "12/01/2023"
+						},
+						{
+							"key": "VacationDays",
+							"value": "1"
+						},
+						{
+							"key": "user-id",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getReportingManagerForEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/getReportingManagerForEmployee?_employeeid=1053217&_Company=MWD&user-id=a.hyder",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"getReportingManagerForEmployee"
+					],
+					"query": [
+						{
+							"key": "_employeeid",
+							"value": "1053217"
+						},
+						{
+							"key": "_Company",
+							"value": "MWD"
+						},
+						{
+							"key": "user-id",
+							"value": "a.hyder"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leave request get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/entitytype/dynamic/get?entityTypeRecId=249&processStageId=2&$filter:ApprovalManager=eq:1053217&user-id=a.hyder",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"entitytype",
+						"dynamic",
+						"get"
+					],
+					"query": [
+						{
+							"key": "entityTypeRecId",
+							"value": "249"
+						},
+						{
+							"key": "processStageId",
+							"value": "2"
+						},
+						{
+							"key": "$filter:ApprovalManager",
+							"value": "eq:1053217"
+						},
+						{
+							"key": "user-id",
+							"value": "a.hyder"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entitytype/ticket/wfAction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"RecIds\": ,\r\n\"RecId\": 0,\r\n\"StageId\": ,\r\n\"Action\": 177,\r\n\"Comments\": \"\",\r\n\"RefFields\": \"\",\r\n\"RecordStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/entitytype/ticket/wfAction?entitytyperecid",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"entitytype",
+						"ticket",
+						"wfAction"
+					],
+					"query": [
+						{
+							"key": "entitytyperecid",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ValidateleaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "{",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "\"effectiveDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"endDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"payGroupStartDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"paymentMethod\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationType\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"employeeId\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"startDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"ticketDestinationId\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"extendedLeave1\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationTypeEx1\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"extendedLeave2\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationTypeEx2\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationDays\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationDaysExt1\"",
+						"value": ",",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationDaysExt2\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationCode\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"startDateExt1\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"endDateExt1\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"startDateExt2\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"endDateExt2\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"adultTicketContract\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"childTicketContract\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"infantTicketContract\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"visaContract\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"ticketClass\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"adultTicketsUsed\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"childTicketsUsed\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"infantTicketsUsed\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"adultTicketPrice\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"childTicketPrice\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"infantTicketPrice\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"ticketPricePercentage\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"totalTicketsPrice\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"payGroupId\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"payGroupPeriodStartDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"payGroupPeriodEndDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"payWith\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"monthCalculationMethod\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationbalance\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"vacationbalanceNew\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"requestFor\"",
+						"value": "\"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"ticketEntitlement\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"ticketCostOn\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"ticketfor\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"destinationType\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"departureFrom\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"departureCity\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"departureDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"arrivalDate\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"adultTicketBalance\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"childTicketBalance\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"infantTicketBalance\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"adultTicketBalanceNew\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"childTicketBalanceNew\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"infantTicketBalanceNew\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"visaEntitlement\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"visaFor\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"visaCostOn\"",
+						"value": " \"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"visaDays\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"visaUsed\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"visaBalance\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"visaBalanceNew\"",
+						"value": " ,",
+						"type": "text"
+					},
+					{
+						"key": "\"alternativeWorker\"",
+						"value": "\"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"phoneDuringvacation\"",
+						"value": "\"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"clearanceRequestId\"",
+						"value": "\"\",",
+						"type": "text"
+					},
+					{
+						"key": "\"external\"",
+						"value": "\"\"",
+						"type": "text"
+					},
+					{
+						"key": "}",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": "https://bcp.mawarid.com.sa/api/v1/erp/ValidateleaveRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "InitiateLeaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_employeeId\": \"\",\r\n  \"_extendedLeave1\": \"no\",\r\n  \"_extendedLeave2\":\"no\",\r\n  \"_endDate\": \"\",\r\n  \"_endDateEx1\": \"\",\r\n  \"_endDateEx2\": \"\",\r\n  \"_startDate\": \"\",\r\n  \"_startDateEx1\": \"\",\r\n  \"_startDateEx2\": \"\",\r\n  \"_ticketDestinationId\": \"\",\r\n  \"_vacationBalance\": 0,\r\n  \"_vacationCode\": \"0\",\r\n  \"_vacationDays\": 0,\r\n  \"_vacationDaysEx1\":0,\r\n  \"_vacationDaysEx2\": 0,\r\n  \"_vacationType\": \"\",\r\n  \"_vacationTypeEx1\": \"none\",\r\n  \"_vacationTypeEx2\": \"none\",\r\n  \"_payWith\": \"\",\r\n  \"_ticketEntitlement\": \"\",\r\n  \"_ticketFor\": \"\",\r\n  \"_ticketCostOn\":\"\",\r\n  \"_destinationType\":\"\",\r\n  \"_ticketClass\":\"Economy\",\r\n  \"_departureFrom\":\"\",\r\n  \"_departureDate\":\"\",\r\n  \"_arrivaldate\":\"\",\r\n  \"_adultticketUsed\":,\r\n  \"_childTicketUsed\":,\r\n  \"_infantTicketUsed\":,\r\n  \"_visaEntitlement\":\"\",\r\n  \"_visaFor\":\"\",\r\n  \"_visaCoston\":\"\",\r\n  \"_visaDays\":,\r\n  \"_visaUsed\":,\r\n  \"_external\":\"\",\r\n  \"legalEntity\": \"MWD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/InitiateLeaveRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"InitiateLeaveRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertLeaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"effectiveDate\": \"\",\r\n  \"endDate\": \"\",\r\n  \"payGroupStartDate\": \"\",\r\n  \"paymentMethod\": \"\",\r\n  \"vacationType\": \"\",\r\n  \"employeeId\": \"\",\r\n  \"startDate\": \"\",\r\n  \"ticketDestinationId\": \"\",\r\n  \"extendedLeave1\": \"\",\r\n  \"vacationTypeEx1\": \"\",\r\n  \"extendedLeave2\": \"\",\r\n  \"vacationTypeEx2\": \"\",\r\n  \"vacationDays\": ,\r\n  \"vacationDaysExt1\": ,\r\n  \"vacationDaysExt2\": ,\r\n  \"vacationCode\": ,\r\n  \"startDateExt1\": \"\",\r\n  \"endDateExt1\": \"\",\r\n  \"startDateExt2\": \"\",\r\n  \"endDateExt2\": \"\",\r\n  \"adultTicketContract\": ,\r\n  \"childTicketContract\": ,\r\n  \"infantTicketContract\": ,\r\n  \"visaContract\": ,\r\n  \"ticketClass\": ,\r\n  \"adultTicketsUsed\": ,\r\n  \"childTicketsUsed\": ,\r\n  \"infantTicketsUsed\":,\r\n  \"adultTicketPrice\": ,\r\n  \"childTicketPrice\": ,\r\n  \"infantTicketPrice\":,\r\n  \"ticketPricePercentage\":,\r\n  \"totalTicketsPrice\": ,\r\n  \"payGroupId\": \"\",\r\n  \"payGroupPeriodStartDate\": \"\",\r\n  \"payGroupPeriodEndDate\": \"\",\r\n  \"payWith\": \"\",\r\n  \"monthCalculationMethod\": ,\r\n  \"vacationbalance\":,\r\n  \"vacationbalanceNew\": ,\r\n  \"requestFor\":\"\",\r\n  \"ticketEntitlement\": \"\",\r\n  \"ticketCostOn\": \"\",\r\n  \"ticketfor\": \"\",\r\n  \"destinationType\": \"\",\r\n  \"departureFrom\": \"\",\r\n  \"departureCity\": \"\",\r\n  \"departureDate\": \"\",\r\n  \"arrivalDate\": \"\",\r\n  \"adultTicketBalance\": ,\r\n  \"childTicketBalance\": ,\r\n  \"infantTicketBalance\":,\r\n  \"adultTicketBalanceNew\": ,\r\n  \"childTicketBalanceNew\": ,\r\n  \"infantTicketBalanceNew\": w,\r\n  \"visaEntitlement\": \"\",\r\n  \"visaFor\": \"\",\r\n  \"visaCostOn\": \"\",\r\n  \"visaDays\": ,\r\n  \"visaUsed\": ,\r\n  \"visaBalance\":,\r\n  \"visaBalanceNew\":,\r\n\"alternativeWorker\":\"\",\r\n\"phoneDuringvacation\":\"\",\r\n\"clearanceRequestId\":\"d\",\r\n\"external\":\"\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/insertLeaveRequest?user-id=selfservice",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"insertLeaveRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "selfservice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertLeave",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/insertLeave?EmpNum=&VacationType=&StartDate=&VacationDays=&AdultTicketsUsed=&ChildTicketBalance=&InfantTicketsUsed=&VisaUsed=&VisaEntitlement=&VisaFor=&VisaCostOn=&EndDate=&TicketDestinationId=&PaymentMethod=&AdultTicketBlance=&user-id=selfservice",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"insertLeave"
+					],
+					"query": [
+						{
+							"key": "EmpNum",
+							"value": ""
+						},
+						{
+							"key": "VacationType",
+							"value": ""
+						},
+						{
+							"key": "StartDate",
+							"value": ""
+						},
+						{
+							"key": "VacationDays",
+							"value": ""
+						},
+						{
+							"key": "AdultTicketsUsed",
+							"value": ""
+						},
+						{
+							"key": "ChildTicketBalance",
+							"value": ""
+						},
+						{
+							"key": "InfantTicketsUsed",
+							"value": ""
+						},
+						{
+							"key": "VisaUsed",
+							"value": ""
+						},
+						{
+							"key": "VisaEntitlement",
+							"value": ""
+						},
+						{
+							"key": "VisaFor",
+							"value": ""
+						},
+						{
+							"key": "VisaCostOn",
+							"value": ""
+						},
+						{
+							"key": "EndDate",
+							"value": ""
+						},
+						{
+							"key": "TicketDestinationId",
+							"value": ""
+						},
+						{
+							"key": "PaymentMethod",
+							"value": ""
+						},
+						{
+							"key": "AdultTicketBlance",
+							"value": ""
+						},
+						{
+							"key": "user-id",
+							"value": "selfservice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ValidateleaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contract\": {\r\n        \"effectiveDate\": \"\",\r\n        \"endDate\": \"\",\r\n        \"payGroupStartDate\": \"\",\r\n        \"paymentMethod\": \"\",\r\n        \"vacationType\": \"\",\r\n        \"employeeId\": \"\",\r\n        \"startDate\": \"\",\r\n        \"ticketDestinationId\": \"\",\r\n        \"extendedLeave1\": \"\",\r\n        \"vacationTypeEx1\": \"None\",\r\n        \"extendedLeave2\": \"\",\r\n        \"vacationTypeEx2\": \"None\",\r\n        \"vacationDays\": ,\r\n        \"vacationDaysExt1\": ,\r\n        \"vacationDaysExt2\": ,\r\n        \"vacationCode\": ,\r\n        \"startDateExt1\": \"\",\r\n        \"endDateExt1\": \"\",\r\n        \"startDateExt2\": \"\",\r\n        \"endDateExt2\": \"\",\r\n        \"adultTicketContract\": ,\r\n        \"childTicketContract\": ,\r\n        \"infantTicketContract\": ,\r\n        \"visaContract\": ,\r\n        \"ticketClass\": ,\r\n        \"adultTicketsUsed\": ,\r\n        \"childTicketsUsed\": ,\r\n        \"infantTicketsUsed\": ,\r\n        \"adultTicketPrice\": ,\r\n        \"childTicketPrice\": ,\r\n        \"infantTicketPrice\": ,\r\n        \"ticketPricePercentage\": ,\r\n        \"totalTicketsPrice\": ,\r\n        \"payGroupId\": \"\",\r\n        \"payGroupPeriodStartDate\": \"\",\r\n        \"payGroupPeriodEndDate\": \"\",\r\n        \"payWith\": \"\",\r\n        \"monthCalculationMethod\": ,\r\n        \"vacationbalance\": ,\r\n        \"vacationbalanceNew\": ,\r\n        \"requestFor\": \"\",\r\n        \"ticketEntitlement\": \"\",\r\n        \"ticketCostOn\": \"\",\r\n        \"ticketfor\": \"\",\r\n        \"destinationType\": \"\",\r\n        \"departureFrom\": \"\",\r\n        \"departureCity\": \"\",\r\n        \"departureDate\": \"\",\r\n        \"arrivalDate\": \"\",\r\n        \"adultTicketBalance\": ,\r\n        \"childTicketBalance\": ,\r\n        \"infantTicketBalance\": ,\r\n        \"adultTicketBalanceNew\": ,\r\n        \"childTicketBalanceNew\": ,\r\n        \"infantTicketBalanceNew\": ,\r\n        \"visaEntitlement\": \"\",\r\n        \"visaFor\": \"\",\r\n        \"visaCostOn\": \"\",\r\n        \"visaDays\": ,\r\n        \"visaUsed\": ,\r\n        \"visaBalance\": ,\r\n        \"visaBalanceNew\":\r\n    },\r\n    \"Company\": \"MWD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "\"https://almawarid.operations.dynamics.com/api/services/MWD_StaffPortalServiceGroup/MWD_StaffPortalService/ValidateleaveRequest?user-id=SelfService",
+					"protocol": "\"https",
+					"host": [
+						"almawarid",
+						"operations",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"api",
+						"services",
+						"MWD_StaffPortalServiceGroup",
+						"MWD_StaffPortalService",
+						"ValidateleaveRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submitLeaveRequestToWF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n   \"_leaveRequestId\":\"\", \r\n   \"_submitterUserId\":\"admin\",\r\n   \"_status\":\"Approved\",  \r\n   \"_legalEntity\":\"MWD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/submitLeaveRequestToWF?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"almawarid",
+						"operations",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"api",
+						"services",
+						"MWMawaridServiceGroup",
+						"MWMawaridService",
+						"submitLeaveRequestToWF"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AttachFileLeaveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/createAttachFileLeaveRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"createAttachFileLeaveRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "returnLeaveAttachmentRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   { \r\n    \"_request\": {\r\n        \"leaveRequestId\":\"\",\r\n        \"company\":\"MWD\"}\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/returnLeaveAttachmentRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllLoanProfileDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/getAllLoanProfileDetails?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"getAllLoanProfileDetails"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InitiateLoanRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_employeeId\":  \"\",\r\n  \"_loanProfileRecid\": ,\r\n  \"_amount\": ,\r\n  \"_numberOfInstallments\": ,\r\n  \"_installmentAmount\": ,\r\n  \"_loanType\": \"\",\r\n  \"_otherLoanTypeId\": \"\",\r\n  \"_requestFor\": \"\",\r\n  \"_effectiveDate\": \"\",\r\n  \"legalEntity\": \"mwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/InitiateLoanRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"InitiateLoanRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ValidateLoanRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"empNum\": \"\",\r\n  \"sourceType\": \"\",\r\n  \"loanProfileId\": \"\",\r\n  \"loanType\": \"\",\r\n  \"otherLoanType\": \"\",\r\n  \"loanDate\": \"\",\r\n  \"effectiveDate\": \"\",\r\n  \"amount\": \"\",\r\n  \"numberOfinstallments\": \"\",\r\n  \"payGroupId\": \"\",\r\n  \"payGroupStartDate\": \"\",\r\n  \"payGroupEndDate\": \"\",\r\n  \"endDate\": \"\",\r\n  \"installmentAmount\": \"\",\r\n  \"loanProfileRefRecID\": \"\",\r\n  \"requestFor\": \"\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/ValidateLoanRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"ValidateLoanRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creationOfLoanRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"empNum\": \"\",\r\n  \"sourceType\": \"\",\r\n  \"loanProfileId\": \"\",\r\n  \"loanType\": \"\",\r\n  \"otherLoanType\": \"\",\r\n  \"loanDate\": \"\",\r\n  \"effectiveDate\": \"\",\r\n  \"amount\": ,\r\n  \"numberOfinstallments\": ,\r\n  \"payGroupId\": \"\",\r\n  \"payGroupStartDate\": \"\",\r\n  \"payGroupEndDate\": \"\",\r\n  \"endDate\": \"\",\r\n  \"installmentAmount\": ,\r\n  \"loanProfileRefRecID\":,\r\n  \"requestFor\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/creationOfLoanRequest?user-id=selfservice",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"creationOfLoanRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "selfservice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAttachFileLoanRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/createAttachFileLoanRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"createAttachFileLoanRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "returnLoanAttachmentRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_request\": {\r\n    \"loanRequestId\": \"\",\r\n    \"company\": \"MWD\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/returnLoanAttachmentRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "InitiateBusinessRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/InitiateBusinessRequest?_employeeId&legalEntity=MWD&user-id",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"InitiateBusinessRequest"
+					],
+					"query": [
+						{
+							"key": "_employeeId",
+							"value": null
+						},
+						{
+							"key": "legalEntity",
+							"value": "MWD"
+						},
+						{
+							"key": "user-id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validateBusinessRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestId\": \"\",\r\n  \"personnelNumber\": \"\",\r\n  \"workerName\": \"\",\r\n  \"payGroupId\":  \"\",\r\n  \"destinationType\":  \"\",\r\n  \"payWith\":  \"\",\r\n  \"businessProfileId\":  \"\",\r\n  \"contractId\": \"\",\r\n  \"transportationBy\":  \"\",\r\n  \"transactionDate\":  \"\",\r\n  \"payGroupStartDate\":  \"\",\r\n  \"payGroupEndDate\":  \"\",\r\n  \"effectiveDate\": \"\",\r\n  \"startDate\":  \"\",\r\n  \"endDate\":  \"\",\r\n  \"requestFor\":  \"\",\r\n  \"requester\": \"\",\r\n  \"destination\":\"\",\r\n  \"needHotel\":\"\",\r\n  \"needFood\":\"\",\r\n  \"needTransport\":\"\",\r\n\"IsExitReEntryVisa\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/validateBusinessRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"validateBusinessRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertBusinessRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"requestId\":\"\",\r\n\"personnelNumber\":\"\",\r\n\"workerName\":\"\",\r\n\"payGroupId\":\"\",\r\n\"destinationType\":\"\",\r\n\"payWith\":\"\",\r\n\"businessProfileId\":\"\",\r\n\"contractId\":\"\",\r\n\"transportationBy\":\"\",\r\n\"transactionDate\":\"\",\r\n\"payGroupStartDate\":\"\",\r\n\"payGroupEndDate\":\"\",\r\n\"effectiveDate\":\"\",\r\n\"startDate\":\"\",\r\n\"endDate\":\"\",\r\n\"requestFor\":\"\",\r\n\"requester\":\"\",\r\n\"destination\":\"\",\r\n  \"needHotel\":\"\",\r\n  \"needFood\":\"\",\r\n  \"needTransport\":\"\",\r\n\"IsExitReEntryVisa\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/insertBusinessRequest?user-id=selfservice",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"insertBusinessRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "selfservice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InitiateBusinessRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_employeeId\": \"\",\r\n  \"_payWith\": \"\",\r\n  \"legalEntity\": \"MWD\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/InitiateBusinessRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSelfServiceRequestERP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/recruitment/CreateSelfServiceRequestERP?recId&requestType=BusinessTrip&formRecid=11032&skipStageMovement=true",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"recruitment",
+						"CreateSelfServiceRequestERP"
+					],
+					"query": [
+						{
+							"key": "recId",
+							"value": null
+						},
+						{
+							"key": "requestType",
+							"value": "BusinessTrip"
+						},
+						{
+							"key": "formRecid",
+							"value": "11032"
+						},
+						{
+							"key": "skipStageMovement",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submitBusinessRequestToWF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_businessTripRequestId\": \"\",\r\n  \"_submitterUserId\": \"admin\",\r\n  \"_status\": \"Approved\",\r\n  \"_legalEntity\": \"MWD\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/submitBusinessRequestToWF?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"almawarid",
+						"operations",
+						"dynamics",
+						"com"
+					],
+					"path": [
+						"api",
+						"services",
+						"MWMawaridServiceGroup",
+						"MWMawaridService",
+						"submitBusinessRequestToWF"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAttachFileBTRRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/createAttachFileBTRRequest?user-id=SelfService",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"createAttachFileBTRRequest"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "SelfService"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/SystemApi/api/v1/security/changePassword?userName=a.hyder&oldPassword=123456&newPassword=123456",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"SystemApi",
+						"api",
+						"v1",
+						"security",
+						"changePassword"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "a.hyder"
+						},
+						{
+							"key": "oldPassword",
+							"value": "123456"
+						},
+						{
+							"key": "newPassword",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
