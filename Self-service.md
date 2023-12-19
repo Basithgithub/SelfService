@@ -6,7 +6,7 @@
    - [`Sawaid-SelfService`](https://portaltest.sawaidsa.com:8443/System/#/SelfService/authgateway)
    - [`Jussur-SelfService`](https://crm-api-dev.jussuremdad.com:446/System/#/SelfService/authgateway)
 
-   ## <ins>Postman Collection</ins>
+## <ins>Postman Collection</ins>
    
    [`SelfService Api Collection Link`](Collection\SelfServiceApi.json)
    > Note:
@@ -18,7 +18,7 @@
  - [`Click Here`](https://portal.mawarid.com.sa/System/#/SelfService/authgateway) - SelfService Application Page
  - Selfservice app maing works with *Leave request*, *Loan request*, and *Business trip*
 
- ##  **<ins>Leave Request</ins>**
+ ## **<ins>Leave Request</ins>**
 
 - A leave request is a message in which you ask your employer or supervisor for time off work. Typically, in the message, you'd state the reason behind your request and specify the dates that you want to take off
 - Leave request has *Show pending* -> *Draft* -> *Submitted* ->*Approved* -> *Reject* -> *cancel* stages
@@ -30,7 +30,7 @@
 *3,api/v1/categoryrequestertype*
 - A Star in the fields while creating leave requests are mandatory fields which are required 
 
- ##  **<ins>Loan Request</ins>**
+ ## **<ins>Loan Request</ins>**
 
  - Loan Request means a request by the Borrower, executed by a Responsible Officer of the Borrower
  - Loans may be for a specific, one-time amount, or they may be available as an open-ended line of credit up to a specified limit. Loans come in many different forms including secured, unsecured, commercial, and personal loans.
@@ -44,7 +44,7 @@
 *3,api/v1/erp/getReportingManagerForEmployee*
 *4,api/v1/security/documenttype/showattachement*
 
- ##  **<ins>Business Trip</ins>**
+ ## **<ins>Business Trip</ins>**
  - A Visit made to a place for work purposes, typically one involving a journey of some distance.
 "A Business trip offers a break from the daily office routine"
  - A Star in the fields while creating Business trip request are mandatory fields which are required 
