@@ -70,8 +70,8 @@
    - Login Credential for Authgateway-Login `User-Name:a.hyder` and `Password:123456`
  
  ## **<center>Menus In Self-Service</center>**
- ## **<ins>Top Menu</ins>**
 ![N|Solid](assets\TopMenu.png)
+ ## **<ins>Top Menu</ins>**
 - In this Top menu we are able to redirect to our other apps 
  ## **<center>Side Menu</center>**
    - Dashboard
