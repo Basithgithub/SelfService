@@ -55,8 +55,8 @@
 *4,api/v1/security/documenttype/showattachement*
 *5,/api/v1/entitytype/form*
 
+## **<ins>Login Page</ins>**
 
- ## **<ins>Login Page</ins>**
    ![N|Solid](assets\LoginPage.png)
    In Self-service we have two types of login [`Active-Directory`](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn283324(v=ws.11)) and [`Authgateway-Login`](https://portal.mawarid.com.sa/System/#/SelfService/authgateway)
 > Note:
@@ -66,9 +66,10 @@
  
  ## **<center>Menus In Self-Service</center>**
 ![N|Solid](assets\TopMenu.png)
- ## **<ins>Top Menu</ins>**
+
+## **<ins>Top Menu</ins>**
 - In this Top menu we are able to redirect to our other apps 
- ## **<center>Side Menu</center>**
+## **<center>Side Menu</center>**
    - Dashboard
    - My Appoval
    - Requests
