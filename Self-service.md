@@ -64,12 +64,16 @@
    - For Authgateway-Login it works under the (LoginComponent and Authgateway Components, For more info and flow please check in the UI Code)
    - Login Credential for Authgateway-Login `User-Name:a.hyder` and `Password:123456`
  
- ## **<center>Menus In Self-Service</center>**
+## **<center>Menus In Self-Service</center>**
+
 ![N|Solid](assets\TopMenu.png)
 
 ## **<ins>Top Menu</ins>**
+
 - In this Top menu we are able to redirect to our other apps 
+
 ## **<center>Side Menu</center>**
+
    - Dashboard
    - My Appoval
    - Requests
@@ -78,6 +82,7 @@
    - All Requests
 
 ## **<ins>Dashboard</ins>**
+
 ![N|Solid](assets\Dashboard.png)
 - In Dashboard we have an three tiles named as *Leave request create*, *Loan request create*, and *Business trip create*, By clicking this tile you have been redirect to the create page of *Leave request create*, *Loan request create*, and *Business trip create*
 - To DashBoard page [`Click here to redirect to dashboard`](https://portal.mawarid.com.sa/System/#/SelfService/NewSelfServiceDashboard)
