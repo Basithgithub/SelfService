@@ -7,7 +7,6 @@
    - [`Jussur-SelfService`](https://crm-api-dev.jussuremdad.com:446/System/#/SelfService/authgateway)
 
 ## <ins>Postman Collection</ins>
-   
    [`SelfService Api Collection Link`](Collection\SelfServiceApi.json)
    > Note:
    - This Collecetion will show as a json please download this file and import in postman to test and viewing purpose
@@ -59,7 +58,6 @@
 
  ## **<ins>Login Page</ins>**
    ![N|Solid](assets\LoginPage.png)
-
    In Self-service we have two types of login [`Active-Directory`](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn283324(v=ws.11)) and [`Authgateway-Login`](https://portal.mawarid.com.sa/System/#/SelfService/authgateway)
 > Note:
    - For Active-directory login we need credentials that are registed in azure, For configuration purpose we need (ClientId, Authority,  and RedirectURL)
