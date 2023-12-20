@@ -117,21 +117,5 @@
 ![N|Solid](assets\DevMode.png)
 -In this devmode we able to change the configurations of form, menus, fields, assigning users and roles for the users
 ![N|Solid](assets\menu2.png)
-## **<center>SelfService Credentials</center>**
 
-### **<ins>Server Credentials</ins>** 
-
-- Ip Address: 172.16.1.109,
-- User Name : MW\p.dev,
-- Password : Dev@4569
-
-### **<ins>Deployment Path</ins>**
-
-- Deployment Path for Self-Service : C:\App\System
-
-### **<ins>Database Credentials</ins>**
-
-- Ip Address: 172.16.1.109,
-- username : sa
-- Password : 3mpP0rt@321
 
