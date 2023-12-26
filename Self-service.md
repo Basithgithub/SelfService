@@ -151,7 +151,7 @@
 ## **<center>Dev Mode</center>**
 -DevMode is a short form of devoleper mode which helps devolepers to change, configure activities without changes in code if we need to enable the DevMode *Press f12* -> *go-to application* -> *LocalStorage* -> Add *DevMode* as *True* as shown in the below menu
 ![N|Solid](assets\DevMode.png)
--In this devmode we able to change the configurations of form, menus, fields, assigning users and roles for the users
-![N|Solid](assets\menu2.png)
+<!-- -In this devmode we able to change the configurations of form, menus, fields, assigning users and roles for the users
+![N|Solid](assets\menu2.png) -->
 
 
