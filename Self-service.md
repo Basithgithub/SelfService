@@ -55,6 +55,42 @@
 *4,api/v1/security/documenttype/showattachement*
 *5,/api/v1/entitytype/form*
 
+## **<ins>Leave Request Create</ins>**
+- On Leave request create on loading for we set an value for employee id (User who logged in currentuser)*{{LocalUserInfo.EmployeeId}}*
+- on default today date patch we use *{{TodayDatePipe 'DATE'}}*
+- On rules we update the default values for the following fields *Ticket for*, *Ticket cost on*, *destination type*,*ticket class*, *depature from*, *Visa for*, *VisaCost on* fields
+- While changing employee id we call api of *api/v1/erp/getReportingManagerForEmployee* with URL parameter of *_employeeid*, *_Company* and *user-id*
+- While changing VacationType we triggers the field VacationCode
+- On Startdate change we user the handle bar for start date as *{{DatePipe StartDate 'DATE'}}* and again we triggers the Vacation code, It automatically set the end date with use of *{{AddtionalDatePipe StartDate VacationDays }}*
+- On end date change we set an enddate by handle bar *{{DatePipe EndDate 'DATE'}}* as simailar to start date
+- On adition of enddate we set an value of ExpectedReturnDate by the help of the handle bar *{{AddtionalDatePipe EndDate '1' }}* and again we triggers the vacationcode 
+- On VacationDays Change it triggers the start date ang it will change readonly to changeable field
+- on AdultTicketsUsed, InfantTicketsUsed, VisaUsed, VisaEntitlement it triggers the vacationcode changes
+- On AlternativeEmployeeId Change it triggers AlternativeEmployeeName and patches default employee id with the help of *{{data.employeeName}}*
+- On vactioncode change it triggers the *api/v1/erp/InitiateLeaveRequest* Api with params of user-id(Note: If you need this api for testion and devolepment purpose download api collection in above mentioned link and import it in postman)
+- On vacationDaysExtTwo Change for te field endDateExtend two we use *{{CurrentAdditionalDatePipe startDateExtTwo vacationDaysExtTwo}}* handlebar and for endDateExtTwoString we use *{{DatePipe endDateExtTwo 'DATE'}}*
+- On vacationDaysExtOne Change for the field endDateExtOne we use *{{CurrentAdditionalDatePipe startDateExtOne vacationDaysExtOne}}* and endDateExtOneString *{{DatePipe endDateExtOne 'DATE'}}* handlebars
+- on vacationTypeExTwo change we set an value for startDateExtTwo, startDateExtTwoString as handlebar *{{AddtionalDatePipe endDateExtOne '1'}}* and *{{DatePipe startDateExtTwo 'DATE'}}*
+
+
+## **<ins>Loan Request Create</ins>**
+
+- On Loan request create we set an employeeid as *{{LocalUserInfo.EmployeeId}}*
+- While changing employee id we call api of *api/v1/erp/getReportingManagerForEmployee* with URL parameter of *_employeeid*, *_Company* and *user-id*
+- On LoanProfileId Change we set an value for loantype, oyher loan type, loan Profile recid, effective date as from pipes *{{data.loanType}}*, *{{data.otherLoanTypeId}}*, *{{data.recId}}*
+- On EffectiveDate Change we set an value for EffectiveDateString as *{{DateToStringPipe EffectiveDate 'mm-dd-yyyy'}}* 
+- On EffectiveDate Change we all an restapi *api/v1/erp/InitiateLoanRequest*
+> Note: For more info about the above mentioned api please download the postman collection attached in the document 
+
+## **<ins>Business Trip Create</ins>**
+
+- On Business trip create we set an employeeid as *{{LocalUserInfo.EmployeeId}}*
+- On loading bussiness trip create we load api *api/v1/erp/InitiateBusinessRequest* while loading business trip create form 
+> Note: For more info about the above mentioned api please download the postman collection attached in the document 
+-  While changing employee id we call api of *api/v1/erp/getReportingManagerForEmployee* with URL parameter of *_employeeid*, *_Company* and *user-id*
+
+
+
 ## **<ins>Login Page</ins>**
    ![N|Solid](assets\LoginPage.png)
  - In Self-service we have two types of login [`Active-Directory`](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn283324(v=ws.11)) and [`Authgateway-Login`](https://portal.mawarid.com.sa/System/#/SelfService/authgateway)
