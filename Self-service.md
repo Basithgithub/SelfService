@@ -27,6 +27,11 @@
 *2,api/v1/security/documenttype/showattachement*
 *3,api/v1/categoryrequestertype*
 - A Star in the fields while creating leave requests are mandatory fields which are required 
+- On *Approved* stage we calls api *https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/submitLeaveRequestToWF* with body
+*"Body":"{"_leaveRequestId":"@@Data.ERPRequestId""_submitterUserId":"admin","_status":"Approved","_legalEntity":"MWD"}"*
+> Note: On submit leave request *_submitterUserId* is assigned as *admin*
+- While creating leave request we call api using event *api/v1/recruitment/CreateSelfServiceRequestERP*
+> Note: This api is used to create data on erp 
 
 ## **<ins>Loan Request</ins>**
  - Loan Request means a request by the Borrower, executed by a Responsible Officer of the Borrower
@@ -40,6 +45,11 @@
 *2,api/v1/categoryrequestertype*
 *3,api/v1/erp/getReportingManagerForEmployee*
 *4,api/v1/security/documenttype/showattachement*
+- On *Approved* stage we calls api *https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/submitLeaveRequestToWF* with body
+*"Body":"{"_leaveRequestId":"@@Data.ERPRequestId""_submitterUserId":"admin","_status":"Approved","_legalEntity":"MWD"}"*
+> Note: On submit leave request *_submitterUserId* is assigned as *admin*
+- While creating leave request we call api using event *api/v1/recruitment/CreateSelfServiceRequestERP*
+> Note: This api is used to create data on erp 
 
 ## **<ins>Business Trip</ins>**
  - A Visit made to a place for work purposes, typically one involving a journey of some distance.
@@ -54,6 +64,11 @@
 *3,api/v1/erp/getReportingManagerForEmployee*
 *4,api/v1/security/documenttype/showattachement*
 *5,/api/v1/entitytype/form*
+- On *Approved* stage we calls api *https://almawarid.operations.dynamics.com/api/services/MWMawaridServiceGroup/MWMawaridService/submitLeaveRequestToWF* with body
+*"Body":"{"_leaveRequestId":"@@Data.ERPRequestId""_submitterUserId":"admin","_status":"Approved","_legalEntity":"MWD"}"*
+> Note: On submit leave request *_submitterUserId* is assigned as *admin*
+- While creating leave request we call api using event *api/v1/recruitment/CreateSelfServiceRequestERP*
+> Note: This api is used to create data on erp 
 
 ## **<ins>Leave Request Create</ins>**
 - On Leave request create on loading for we set an value for employee id (User who logged in currentuser)*{{LocalUserInfo.EmployeeId}}*
@@ -148,9 +163,9 @@
 
 - In this menu we will have all the requstes includes(`Personal, General, and Stages based LeaveRequest, LoanRequest, and BusinessTrip Requests`) 
 
-## **<center>Dev Mode</center>**
+<!-- ## **<center>Dev Mode</center>**
 -DevMode is a short form of devoleper mode which helps devolepers to change, configure activities without changes in code if we need to enable the DevMode *Press f12* -> *go-to application* -> *LocalStorage* -> Add *DevMode* as *True* as shown in the below menu
-![N|Solid](assets\DevMode.png)
+![N|Solid](assets\DevMode.png) -->
 <!-- -In this devmode we able to change the configurations of form, menus, fields, assigning users and roles for the users
 ![N|Solid](assets\menu2.png) -->
 
